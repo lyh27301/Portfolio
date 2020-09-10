@@ -1,0 +1,20 @@
+@mixin square($size) {
+    width: $size;
+    height: $size;
+}
+
+@mixin absolute-center($width) {
+    position: absolute;
+    left: calc(50% - #{$width / 2});
+    top: 0;
+}
+
+@mixin sectionPadding {
+    padding: 40px 20px;
+    @media (min-width: $bp-m) {
+        padding: 40px 60px;
+    }
+    @media (min-width: $bp-l) {
+        padding: 40px calc((100vw - 900px) / 2);
+    }
+}

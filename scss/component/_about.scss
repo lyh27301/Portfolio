@@ -1,0 +1,51 @@
+#about {
+  background-color: lighten($thm1, 35%);
+  text-align: center;
+  @include sectionPadding;
+  margin-top: $nav-height;
+}
+
+#resume {
+  margin-top: 7px;
+  transform: scale(1.3);
+  @media (min-width: $bp-m) {
+    float: left;
+  }
+}
+
+#about::after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.summary,
+.name {
+  @media (min-width: $bp-m) {
+    text-align: start;
+  }
+}
+
+#profile-photo {
+  @include square($size: 270px);
+  border-radius: 50%;
+  margin: 10px;
+
+  @media (max-width: $bp-s) {
+    @include square($size: 220px);
+  }
+
+  @media (min-width: $bp-m) {
+    float: right;
+  }
+}
+
+#about .name {
+  font-family: "Kufam", serif;
+  font-size: 2rem;
+  color: $color-text;
+  margin: 1rem 0 0;
+  font-weight: 900;
+}

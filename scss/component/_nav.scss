@@ -1,0 +1,50 @@
+/* ============================================= */
+/*              Navigation                       */
+/* ============================================= */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba($thm3, $alpha: .3);
+    padding: 5px 10px;
+    z-index: 2;
+    height: $nav-height;
+}
+
+#menu-icon {
+    width: #{$icon + 2};
+    height: $icon;
+}
+
+.dropdown {
+    /* container div */
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    margin-top: -15px;
+    display: none;
+    position: absolute;
+    background-color: rgba($thm3, $alpha: .8);
+    max-width: 100%;
+    min-width: 100px;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    text-align: center;
+    * {
+        color: white;
+    }
+}
+
+.dropdown-content ul {
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+.nav-item{
+    border-bottom: 1px solid #eeeeee;
+    padding: 10px 5px;
+    list-style-type: none;
+    margin: 0 auto;
+}

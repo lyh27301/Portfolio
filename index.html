@@ -1,71 +1,238 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Yanhan L's Profile</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Yanhan Liu's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- 正文备选 -->
+    <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+    <!-- kufam -->
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,600;0,900;1,600;1,900&display=swap"
+        rel="stylesheet">
+    <!-- EB Garamond font-family: 'EB Garamond', serif;-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <!-- long cang font-family: 'Long Cang', cursive;-->
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+    <div id="cover">
+        <h1>
+            <span class="char">H</span>
+            <span class="char">e</span>
+            <span class="char">l</span>
+            <span class="char">l</span>
+            <span class="char">o</span>
+            <span class="char">!</span>
+        </h1>
+        <h2>I'm <span class="name">Yanhan</span> :)</h2>
+    </div>
 
-  <nav class="main-nav">
-    <ul class="nav">
-      <li class="name">Yanhan L</li>
-      <li><a href="#">Home</a></li>
-      <li><a href="experience.html">Experience</a></li>
-    </ul>
-  </nav>
+    <!-- header -->
+    <header>
+        <!-- navigation -->
+        <div id="navbar">
+            <div class="dropdown">
+                <!-- nav icon -->
+                <img id="menu-icon" src="icons/category-872.svg" alt="category icon">
+                <!-- Dropdown nav -->
+                <nav class="dropdown-content">
+                    <ul>
+                        <li class="nav-item">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact">Contact</a>
+                        </li>
 
-  <header>
-    <img src="images/me_2.jpeg" alt="Drawing of Yanhan L" class="profile-image">
-    <h1 class="tag name">Hello, I’m Yanhan.</h1>
-    <p class="tag location">My home is Chengdu, China.</p>
-  </header>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-  <main class="flex">
-    <article class="card">
-      <h2>Background</h2>
-      <p>I’m an prospective web designer who is currently an undergraduate student. I've traveled to lots of different
-        places and I’m excited to bring my inspirations to the process of building fantastic looking websites.</p>
-      <p>I am a life-long learner who's always interested in expanding my skills.</p>
-    </article>
+    <main>
+        <!-- About Me -->
+        <section id="about">
+            <img id="profile-photo" src="images/yanhan_1.jpg" alt="profile photo of Yanhan">
+            <p class="name">Hello, I'm Yanhan!</p>
+            <p class="summary">I am currently a forth year Computer Science & Statistics student at McGill University.
+                With passion of programming and design, I enjoy making fun and engaging interactive experiences.
+            </p>
+            <p class="summary">Here are some of my front-end projects down below. Also if you are interested, check out
+                my
+                <a class="inline-link" target="_blank" href="https://github.com/lyh27301">Github</a> page to view more
+                projects.
+            </p>
+            <a href="" target="_blank" class="btn-link" id="resume" title="CV">Resume</a>
+        </section>
 
-    <article class="card">
-      <h2>Goals</h2>
-      <p>To master the process of building web sites, I want to increase my knowledge, skills and abilities in:</p>
-      <ul class="skills">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>vue</li>
-      </ul>
-      <p>As a front-end developer, I'd like to create an impressive online presence for clients.</p>
-    </article>
+        <!-- Skills -->
+        <section id="skill">
+            <h1>Front-End Related Skills</h1>
+            <div class="fe-skill-container">
+                <span class="skill-fe">HTML</span>
+                <span class="skill-fe">CSS</span>
+                <span class="skill-fe">JavaScript</span>
+                <span class="skill-fe">AJAX</span>
+                <span class="skill-ot">Adobe Photoshop</span>
+                <span class="skill-ot">Github</span>
+            </div>
+        </section>
 
-    <article class="card">
-      <h2>Hobbies</h2>
-      <p>In my free time, I really enjoy:</p>
-      <ul class="hobbies">
-        <li>Musicals</li>
-        <li>Documentaries</li>
-        <li>Cooking</li>
-        <li>Biking</li>
-        <li>Gardening</li>
-      </ul>
-      <p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>
-    </article>
+        <!-- Projects -->
+        <section id="projects" data-aos="fade-right">
+            <h1>Projects</h1>
+            <p class="p-intro">Some of the projects I have created so far:</p>
+            <!-- The dots/circles -->
+            <div id="circle-set" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+            <div class="project-card-container">
+                <div class="project-card fade">
+                    <img src="images/dashboard.jpg" alt="dashboard screenshot" class="project-image dashboard">
+                    <div class="project-description">
+                        <h3 class="project-name">WebApp Dashboard</h3>
+                        <div class="link-container">
+                            <a target="_blank" href="https://lyh27301.github.io/web_app_dashboard/"
+                                class="btn-link demo">DEMO</a>
+                            <a target="_blank" href="https://github.com/lyh27301/web_app_dashboard"
+                                class="btn-link code">CODE</a>
+                        </div>
+                        <p class="project-skill">HTML, CSS, JavaScript, Chart,js</p>
+                        <p class="project-summary">Simulated a control panel for controlling a web application.</p>
+                    </div>
+                </div>
+                <div class="project-card fade">
+                    <img src="images/styleguide.png" alt="web style guide screenshot" class="project-image">
+                    <h3 class="project-name">Web Style Guide</h3>
+                    <div class="link-container">
+                        <a target="_blank" href="https://lyh27301.github.io/web_style_guide/"
+                            class="btn-link demo">DEMO</a>
+                        <a target="_blank" href="https://github.com/lyh27301/web_style_guide"
+                            class="btn-link code">CODE</a>
+                    </div>
+                    <p class="project-skill">HTML, CSS, JavaScript, SASS</p>
+                    <p class="project-summary">Simulated a style guide (pattern library) for a team application.</p>
+                </div>
+                <div class="project-card fade">
+                    <img src="images/game.png" alt="wheel of game screenshot" class="project-image">
+                    <h3 class="project-name">Wheel of Game</h3>
+                    <div class="link-container">
+                        <a target="_blank" href="https://lyh27301.github.io/game_wheel_of_success/"
+                            class="btn-link demo">DEMO</a>
+                        <a target="_blank" href="https://github.com/lyh27301/game_wheel_of_success"
+                            class="btn-link code">CODE</a></div>
+                    <p class="project-skill">HTML, CSS, JavaScript</p>
+                    <p class="project-summary">Remake of a word guessing game.</p>
+                </div>
+                <div class="project-card fade">
+                    <img src="images/gallery.png" alt="photo gallery screenshot" class="project-image">
+                    <h3 class="project-name">Interactive Photo Gallery</h3>
+                    <div class="link-container">
+                        <a target="_blank" href="https://lyh27301.github.io/photo_gallery/"
+                            class="btn-link demo">DEMO</a>
+                        <a target="_blank" href="https://github.com/lyh27301/photo_gallery"
+                            class="btn-link code">CODE</a>
+                    </div>
+                    <p class="project-skill">HTML, CSS, JavaScript, baguetteBox.js</p>
+                    <p class="project-summary">An interactive photo gallery. Photos will hide and show depending on user
+                        input.</p>
+                </div>
+                <div class="project-card fade">
+                    <img src="images/form.jpg" alt="form page screenshot" class="project-image form-proj">
+                    <h3 class="project-name">Responsive Online Registration Form</h3>
+                    <div class="link-container">
+                        <a target="_blank" href="https://lyh27301.github.io/online_registration_form/"
+                            class="btn-link demo">DEMO</a>
+                        <a target="_blank" href="https://github.com/lyh27301/online_registration_form"
+                            class="btn-link code">CODE</a>
+                    </div>
+                    <p class="project-skill">HTML, CSS, JavaScript</p>
+                    <p class="project-summary">Simulated an online subscription form.</p>
+                </div>
 
-  </main>
-  <footer>
-    <ul>
-      <li><a href="https://github.com/lyh27301" class="social github">Github</a></li>
-    </ul>
-    <p class="copyright">Copyright 2020, Yanhan L</p>
-  </footer>
+
+                <div class="project-card fade">
+                    <img src="images/dog_select.png" alt="form page screenshot" class="project-image dog-proj">
+                    <h3 class="project-name">Healing Power of Dogs</h3>
+                    <div class="link-container">
+                        <a target="_blank" href="https://lyh27301.github.io/healing_power_of_dogs/"
+                            class="btn-link code">DEMO</a>
+                        <a target="_blank" href="https://github.com/lyh27301/healing_power_of_dogs"
+                            class="btn-link code">CODE</a>
+
+                    </div>
+                    <p class="project-skill">HTML, CSS, JavaScript, FetchAPI</p>
+                    <p class="project-summary">Simulated an online subscription form.</p>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact" data-aos="fade-right">
+            <h1>Contact</h1>
+            <div class="icon-container">
+                <a target="_blank" href="https://github.com/lyh27301"><img class="icon" src="icons/github.svg"
+                        alt="github icon"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/yanhan-liu-020710"><img class="icon"
+                        src="icons/linkedin.svg" alt="linkedin icon"></a>
+                <img class="icon" id="email-icon" src="icons/mail.svg" alt="email icon">
+            </div>
+
+            <div id="msg">
+                <h3>Send e-mail to yanhan.liu@mail.mcgill.ca:</h3>
+                <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                    <div class="label-input">
+                        <label for="sender-name">Name</label>
+                        <input id="sender-name" type="text" name="name">
+                    </div>
+
+                    <div class="label-input">
+                        <label for="sender-message">Message</label>
+                        <textarea id="sender-message" type="text" name="comment" size="50"></textarea>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">SEND</button>
+                        <button type="reset">RESET</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="js/app.js"></script>
+
+    <!-- AOS plugin - slide in effect -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
 </body>
 
 </html>

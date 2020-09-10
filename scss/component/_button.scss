@@ -1,0 +1,59 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn-link {
+  padding: 1px 16px;
+  border: 1px solid $thm1;
+  border-radius: 12px;
+  color: $thm1;
+  margin: 0 5px 0 5px;
+
+  .code {
+    color: inherit;
+  }
+
+  .demo {
+    color: inherit;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 2px 3px #d1ddb9c0;
+  }
+}
+
+.inline-link {
+  color: $thm3;
+  font-family: 'Kufam', serif;
+  font-size: .9rem;
+  font-weight: 600;
+  margin: 0 3px;
+  padding-bottom: -3px;
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.icon {
+    cursor: pointer;
+    &:hover {
+        opacity: .7;
+    }
+    @include square(50px);
+    margin-bottom: 0;
+    @media (min-width: $bp-l) {
+      @include square(40px);
+    }
+}
+
+
+
+// @each $button-type, $button-color in $button-list {
+//   .#{$button-type} {
+//     background-color: $button-color;
+//     &:hover {
+//       background-color: lighten($button-color, 15%);
+//       transition: background .25s ease-out;
+//     }
+//   }
+// }

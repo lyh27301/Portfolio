@@ -1,0 +1,35 @@
+#skill {
+  background-color: $thm3;
+  @include sectionPadding;
+  & * {
+    color: #fff;
+  }
+}
+
+#skill h1 {
+    margin-top: 80px;
+}
+
+.fe-skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+  margin-bottom: 80px;
+}
+
+.fe-skill-container * {
+    background-color: $thm3;
+    &:hover {
+        transform: translateY(20px) scale(1.2);
+        z-index: 1;
+    }
+    transition: transform .3s;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  font-family: "Kufam", serif;
+  flex-basis: auto;
+  padding: 8px 17px;
+  margin: 5px;
+  text-shadow: 0px 0px 7px #e8fdae;
+}
