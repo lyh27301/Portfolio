@@ -640,6 +640,7 @@ p {
   margin-bottom: 10px;
   border: none;
   border-radius: 5px;
+  color: #44473d;
 }
 #msg textarea {
   height: 6rem;
@@ -805,6 +806,7 @@ p {
 }
 
 .dashboard,
+.scoreboard,
 .form-proj {
   object-position: 0% 0%;
 }
