@@ -988,7 +988,8 @@ p {
 
 .summary,
 #profile-photo,
-#resume {
+#resume,
+#skill {
   animation-name: fade2;
   animation-duration: 2s;
   animation-fill-mode: both;

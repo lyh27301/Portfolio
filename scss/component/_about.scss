@@ -3,6 +3,7 @@
   text-align: center;
   @include sectionPadding;
   margin-top: $nav-height;
+  // min-height: 100vh;
 }
 
 #resume {
@@ -101,7 +102,8 @@
 
 .summary,
 #profile-photo,
-#resume {
+#resume,
+#skill {
   animation-name: fade2;
   animation-duration: 2s;
   animation-fill-mode: both;
