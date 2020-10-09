@@ -9,6 +9,19 @@
   & * {
     color: white;
   }
+
+  h1 {
+    margin-bottom: 12px;
+  }
+
+  p {
+    margin: 0 auto;
+    max-width: 85%;
+    font-size: .9rem;
+    @media(min-width: $bp-m) {
+      font-size: 1.1rem;
+    }
+  }
 }
 
 .icon-container {

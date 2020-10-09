@@ -7,18 +7,22 @@
 }
 
 #skill h1 {
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
-.fe-skill-container {
+.skill-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 20px 0;
+  margin-bottom: 30px;
+}
+
+.skill-container:first-child{
   margin-bottom: 80px;
 }
 
-.fe-skill-container * {
+.skill-container * {
     background-color: $thm3;
     &:hover {
         transform: translateY(20px) scale(1.2);
